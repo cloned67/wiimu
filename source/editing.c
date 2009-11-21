@@ -900,7 +900,7 @@ void configuration( void )
  		if((WPAD_Pressed & WPAD_BUTTON_RIGHT)	|| (PAD_Pressed & PAD_BUTTON_RIGHT))
 			increase_option(cur_off);
 
-		if((WPAD_ANY_BUTTON(WPAD_Pressed)) || PAD_ANY_BUTTON(PAD_Pressed))
+		if((WPAD_ANY_PAD(WPAD_Pressed)) || PAD_ANY_PAD(PAD_Pressed))
 			redraw=1;
 
 		if(cur_off>MENU_OPTIONS)	cur_off=0;
