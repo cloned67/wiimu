@@ -177,7 +177,7 @@ void ChannelLauncher()
 		{
 			tmd_content *TMDc = TMD_CONTENTS((tmd*)SIGNATURE_PAYLOAD(TMD));		// OH GOD CREDIAR, WTF WAS THAT MESS!!!
 			//printf("%d,",TMDc->index);
-			s32 cfd = ES_OpenTitleContent( titleID, TMDc->index);
+			s32 cfd = ES_OpenTitleContent( titleID, views, TMDc->index);
 			CheckESRetval(cfd);
 			free(views);
 			u64 sz ATTRIBUTE_ALIGN(32) = 0x140;
